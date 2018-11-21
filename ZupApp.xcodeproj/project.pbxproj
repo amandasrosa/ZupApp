@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		11054F9121A3A25400E92810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11054F9021A3A25400E92810 /* AppDelegate.swift */; };
-		11054F9321A3A25400E92810 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11054F9221A3A25400E92810 /* ViewController.swift */; };
+		11054F9321A3A25400E92810 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11054F9221A3A25400E92810 /* MainViewController.swift */; };
 		11054F9621A3A25400E92810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11054F9421A3A25400E92810 /* Main.storyboard */; };
 		11054F9821A3A25500E92810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11054F9721A3A25500E92810 /* Assets.xcassets */; };
 		11054F9B21A3A25500E92810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11054F9921A3A25500E92810 /* LaunchScreen.storyboard */; };
+		11054FA321A3A27F00E92810 /* ZupWebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11054FA221A3A27F00E92810 /* ZupWebApi.swift */; };
+		11054FA521A3A98300E92810 /* RepositoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11054FA421A3A98300E92810 /* RepositoriesTableViewCell.swift */; };
+		11054FA721A3AD8400E92810 /* RepositoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11054FA621A3AD8400E92810 /* RepositoriesTableViewController.swift */; };
+		3C9F2FD4B807FE321A3369C7 /* Pods_ZupApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C5607CFB5EA80884AD67FF /* Pods_ZupApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AAA9E1CE3007A932CEB4648 /* Pods-ZupApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZupApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZupApp/Pods-ZupApp.debug.xcconfig"; sourceTree = "<group>"; };
 		11054F8D21A3A25400E92810 /* ZupApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZupApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11054F9021A3A25400E92810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11054F9221A3A25400E92810 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11054F9221A3A25400E92810 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		11054F9521A3A25400E92810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11054F9721A3A25500E92810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11054F9A21A3A25500E92810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11054F9C21A3A25500E92810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11054FA221A3A27F00E92810 /* ZupWebApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZupWebApi.swift; sourceTree = "<group>"; };
+		11054FA421A3A98300E92810 /* RepositoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTableViewCell.swift; sourceTree = "<group>"; };
+		11054FA621A3AD8400E92810 /* RepositoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTableViewController.swift; sourceTree = "<group>"; };
+		60F4F12F90E4D0C1600FC7DC /* Pods-ZupApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZupApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZupApp/Pods-ZupApp.release.xcconfig"; sourceTree = "<group>"; };
+		F7C5607CFB5EA80884AD67FF /* Pods_ZupApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZupApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9F2FD4B807FE321A3369C7 /* Pods_ZupApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AE5795D876083C344C26AD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7C5607CFB5EA80884AD67FF /* Pods_ZupApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		11054F8421A3A25400E92810 = {
 			isa = PBXGroup;
 			children = (
 				11054F8F21A3A25400E92810 /* ZupApp */,
 				11054F8E21A3A25400E92810 /* Products */,
+				9B5781F7CA1FC6A5C1242120 /* Pods */,
+				0AE5795D876083C344C26AD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +76,25 @@
 			isa = PBXGroup;
 			children = (
 				11054F9021A3A25400E92810 /* AppDelegate.swift */,
-				11054F9221A3A25400E92810 /* ViewController.swift */,
+				11054F9221A3A25400E92810 /* MainViewController.swift */,
 				11054F9421A3A25400E92810 /* Main.storyboard */,
 				11054F9721A3A25500E92810 /* Assets.xcassets */,
 				11054F9921A3A25500E92810 /* LaunchScreen.storyboard */,
 				11054F9C21A3A25500E92810 /* Info.plist */,
+				11054FA221A3A27F00E92810 /* ZupWebApi.swift */,
+				11054FA421A3A98300E92810 /* RepositoriesTableViewCell.swift */,
+				11054FA621A3AD8400E92810 /* RepositoriesTableViewController.swift */,
 			);
 			path = ZupApp;
+			sourceTree = "<group>";
+		};
+		9B5781F7CA1FC6A5C1242120 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AAA9E1CE3007A932CEB4648 /* Pods-ZupApp.debug.xcconfig */,
+				60F4F12F90E4D0C1600FC7DC /* Pods-ZupApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11054F9F21A3A25500E92810 /* Build configuration list for PBXNativeTarget "ZupApp" */;
 			buildPhases = (
+				5496C801AFB1B24202BB0637 /* [CP] Check Pods Manifest.lock */,
 				11054F8921A3A25400E92810 /* Sources */,
 				11054F8A21A3A25400E92810 /* Frameworks */,
 				11054F8B21A3A25400E92810 /* Resources */,
+				7140AD6EF408882B6064B073 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +165,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5496C801AFB1B24202BB0637 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZupApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7140AD6EF408882B6064B073 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZupApp/Pods-ZupApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZupApp/Pods-ZupApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11054F8921A3A25400E92810 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11054F9321A3A25400E92810 /* ViewController.swift in Sources */,
+				11054FA321A3A27F00E92810 /* ZupWebApi.swift in Sources */,
+				11054FA721A3AD8400E92810 /* RepositoriesTableViewController.swift in Sources */,
+				11054FA521A3A98300E92810 /* RepositoriesTableViewCell.swift in Sources */,
+				11054F9321A3A25400E92810 /* MainViewController.swift in Sources */,
 				11054F9121A3A25400E92810 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +365,7 @@
 		};
 		11054FA021A3A25500E92810 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAA9E1CE3007A932CEB4648 /* Pods-ZupApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +384,7 @@
 		};
 		11054FA121A3A25500E92810 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F4F12F90E4D0C1600FC7DC /* Pods-ZupApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
